@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inclusiencia - Psicología y Psicopedagogía</title>
+  <!-- Fuentes -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
+      background: #FFFFFF;
+      color: #333;
+    }
+
+    header {
+      background-color: #A8E6CF;
+      color: #fff;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    header p {
+      margin-top: 10px;
+      font-size: 1.2em;
+    }
+
+    nav {
+      background: #8bd3b6;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 10px;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1100px;
+      margin: 40px auto;
+    }
+
+    h2 {
+      color: #333;
+      border-left: 5px solid #A8E6CF;
+      padding-left: 10px;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    .profesionales, .servicios, .cursos, .contacto {
+      margin-bottom: 60px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      align-items: center;
+    }
+
+    .card {
+      background: #F0F0F0;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+      max-width: 300px;
+      text-align: center;
+    }
+
+    .card h3 {
+      margin-top: 0;
+      color: #333;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    .btn {
+      background: #A8E6CF;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      display: inline-block;
+      margin-top: 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .btn:hover {
+      background: #8bd3b6;
+    }
+
+    form input, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    footer {
+      background: #A8E6CF;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    .whatsapp-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25D366;
+      color: white;
+      border-radius: 50%;
+      padding: 15px;
+      font-size: 24px;
+      text-decoration: none;
+      z-index: 1000;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Inclusiencia</h1>
+    <p>Psicología y Psicopedagogía para potenciar tu bienestar</p>
+  </header>
+
+  <!-- Menú -->
+  <nav>
+    <a href="#profesionales">Quiénes somos</a>
+    <a href="#servicios">Servicios</a>
+    <a href="#cursos">Cursos y talleres</a>
+    <a href="#contacto">Turnos y contacto</a>
+  </nav>
+
+  <div class="container">
+
+    <!-- Profesionales -->
+    <section id="profesionales" class="profesionales">
+      <h2>Quiénes somos</h2>
+      <div class="card">
+        <h3>Pablo Nicolás Charvey</h3>
+        <p>Psicólogo especializado en el acompañamiento de personas, con experiencia en el abordaje clínico y educativo.</p>
+      </div>
+      <div class="card">
+        <h3>Alejandra Carina Maciel</h3>
+        <p>Psicopedagoga con amplia trayectoria en procesos cognitivos, inclusión educativa y desarrollo de aprendizajes.</p>
+      </div>
+    </section>
+
+    <!-- Servicios -->
+    <section id="servicios" class="servicios">
+      <h2>Servicios</h2>
+      <div class="card">
+        <h3>Asesoramiento psicológico y psicopedagógico</h3>
+        <p>Orientación profesional para el bienestar emocional, cognitivo y educativo.</p>
+      </div>
+      <div class="card">
+        <h3>Turnos online y presenciales</h3>
+        <p>Agendá una cita en nuestros consultorios o accedé a un turno virtual.</p>
+      </div>
+    </section>
+
+    <!-- Cursos y talleres -->
+    <section id="cursos" class="cursos">
+      <h2>Cursos y talleres</h2>
+
+      <div class="card">
+        <h3>Bullying</h3>
+        <p>Límite: 40 personas.</p>
+        <a href="mailto:alejandramaciel94@gmail.com?subject=Inscripción%20Curso%20Bullying&body=Hola,%20quiero%20inscribirme%20en%20el%20curso%20de%20Bullying" class="btn">Inscribirme</a>
+      </div>
+
+      <div class="card">
+        <h3>Psicología para peluqueros</h3>
+        <p>Límite: 40 personas.</p>
+        <a href="mailto:alejandramaciel94@gmail.com?subject=Inscripción%20Curso%20Psicología%20para%20peluqueros&body=Hola,%20quiero%20inscribirme%20en%20el%20curso%20de%20Psicología%20para%20peluqueros" class="btn">Inscribirme</a>
+      </div>
+
+      <div class="card">
+        <h3>Crianza respetuosa y habilidades parentales</h3>
+        <p>Límite: 40 personas.</p>
+        <a href="mailto:alejandramaciel94@gmail.com?subject=Inscripción%20Curso%20Crianza%20Respetuosa&body=Hola,%20quiero%20inscribirme%20en%20el%20curso%20de%20Crianza%20Respetuosa%20y%20Habilidades%20Parentales" class="btn">Inscribirme</a>
+      </div>
+
+      <div class="card">
+        <h3>Los desafíos de la inclusión - dislexia</h3>
+        <p>Límite: 40 personas.</p>
+        <a href="mailto:alejandramaciel94@gmail.com?subject=Inscripción%20Curso%20Inclusión%20Dislexia&body=Hola,%20quiero%20inscribirme%20en%20el%20curso%20de%20Los%20Desafíos%20de%20la%20Inclusión%20-%20Dislexia" class="btn">Inscribirme</a>
+      </div>
+
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="contacto">
+      <h2>Turnos y contacto</h2>
+      <form id="formulario">
+        <input type="text" id="nombre" placeholder="Tu nombre" required>
+        <input type="email" id="email" placeholder="Tu correo" required>
+        <textarea id="mensaje" placeholder="Escribe tu consulta o curso de interés" required></textarea>
+        <button type="submit" class="btn">Enviar</button>
+      </form>
+      <p style="text-align:center; margin-top:20px;">
+        También podés contactarnos por WhatsApp:
+      </p>
+      <a href="https://wa.me/5493434389363?text=Hola%2C%20buenos%20d%C3%ADas%2C%20deseo%20saber%20m%C3%A1s%20sobre%20ustedes%20y%20los%20cursos%20que%20realizan%20%3A)" target="_blank" class="btn">📞 Chatear por WhatsApp</a>
+    </section>
+
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Inclusiencia - Psicología y Psicopedagogía</p>
+  </footer>
+
+  <!-- Botón WhatsApp flotante -->
+  <a href="https://wa.me/5493434389363?text=Hola%2C%20buenos%20d%C3%ADas%2C%20deseo%20saber%20m%C3%A1s%20sobre%20ustedes%20y%20los%20cursos%20que%20realizan%20%3A)" target="_blank" class="whatsapp-btn">📞</a>
+
+  <script>
+    // Mensaje al enviar formulario
+    const form = document.getElementById("formulario");
+    form.addEventListener("submit", e => {
+      e.preventDefault();
+      alert("¡Gracias por tu consulta, " + document.getElementById("nombre").value + "! Nos pondremos en contacto pronto.");
+      form.reset();
+    });
+  </script>
+</body>
+</html>
